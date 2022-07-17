@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.provider.Settings;
+import android.view.Window;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -24,6 +25,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void InitWebView()
     {
+
+        getSupportActionBar().hide();
+
+
+
         try {
             m_WebView = (WebView) findViewById(R.id.webview);
         }
